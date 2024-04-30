@@ -1,0 +1,95 @@
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 14pt;
+ }
+ body{
+        background-color: cadetblue;
+ }
+ .nav-ul{
+        display: flex;
+ }
+ .nav-li{
+        display: inline;
+        margin: 0 10px;
+}
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        background-color: darkslategray;
+        height: 60px;
+        color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+}
+
+.nav-link{
+        text-decoration: none;
+        color: white;
+}
+.nav-button{
+        width: 150px;
+        height: 25px;
+        border: transparent;
+        border-radius: 5px;
+        background-color: rgb(32, 183, 221);
+        color: white;
+        font-size: 13pt;
+}
+#nav-mobile{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: darkslategrey;
+        width: 100%;
+        gap: 10px;
+        padding: 20px 20px;
+        position: fixed;
+        top: 60px;
+
+}
+.mg{
+        display: none;
+         transition: all .10s ease-in;
+}
+.mg:active{
+        background: rgb(32, 183, 221);
+       
+}
+
+#nav-mobile.flex{
+        display: flex;
+}
+section{
+        margin-top: 100px;
+        text-align: justify;
+        padding: 0px 10px;
+        margin-bottom: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+}
+
+h1{
+        font-size: 22pt;
+        text-align: center;
+}
+html{
+        scroll-behavior: smooth;
+}
+@media screen and (max-width : 720px) {
+
+        .nav-ul{
+                display: none;
+        }
+        .mg{
+                display: flex;
+        }
+}
+img{
+        height: 30px;
+}
