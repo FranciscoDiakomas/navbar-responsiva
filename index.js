@@ -6,7 +6,7 @@ window.onload = function () {
                 const mobilebar = document.getElementById('nav-mobile')
                 mobilebar.classList.toggle('flex')
                 const img = document.getElementsByName('img')[0]
-               img.src = '/icons/cross.png'
+               img.setAttribute('src','/icons/cross.png') 
                
-        })     
+        })      
 }
